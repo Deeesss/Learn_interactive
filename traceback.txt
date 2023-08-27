@@ -1,0 +1,35 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/definitions.rpy", line 72, in script
+    init -1 python:
+  File "game/definitions.rpy", line 72, in script
+    init -1 python:
+  File "game/definitions.rpy", line 78, in <module>
+    pos = s.find('## Script to redefine the images')
+TypeError: argument should be integer or bytes-like object, not 'str'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\42194\Desktop\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "C:\Users\42194\Desktop\renpy-8.0.3-sdk\renpy\main.py", line 558, in main
+    renpy.game.context().run(node)
+  File "game/definitions.rpy", line 72, in script
+    init -1 python:
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "game/definitions.rpy", line 72, in script
+    init -1 python:
+  File "C:\Users\42194\Desktop\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\42194\Desktop\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/definitions.rpy", line 78, in <module>
+    pos = s.find('## Script to redefine the images')
+TypeError: argument should be integer or bytes-like object, not 'str'
+
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.0.3.22090809
+No pressure alpha
+Sun Aug 27 08:43:47 2023
